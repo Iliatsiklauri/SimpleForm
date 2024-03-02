@@ -5,7 +5,7 @@
 .parent {
   background-image: url('/Group.png');
 }
-span {
+.spans {
   color: #ff7979;
   text-align: right;
   font-family: Poppins;

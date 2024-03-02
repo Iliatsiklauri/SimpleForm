@@ -64,7 +64,7 @@ const Form = () => {
           />
         )}
         {errors.name && (
-          <span className="absolute bottom-[-20px] right-8 md:right-12">
+          <span className="absolute bottom-[-20px] right-8 md:right-12 spans">
             {errors.name.message}
           </span>
         )}
@@ -87,7 +87,7 @@ const Form = () => {
           />
         )}
         {errors.LastName && (
-          <span className="absolute bottom-[-20px] right-8 md:right-12">
+          <span className="absolute bottom-[-20px] right-8 md:right-12 spans">
             {errors.LastName.message}
           </span>
         )}
@@ -110,7 +110,7 @@ const Form = () => {
           />
         )}
         {errors.Email && (
-          <span className="absolute bottom-[-20px] right-8 md:right-12">
+          <span className="absolute bottom-[-20px] right-8 md:right-12 spans">
             {errors.Email.message}
           </span>
         )}
@@ -133,7 +133,7 @@ const Form = () => {
           />
         )}
         {errors.Password && (
-          <span className="absolute bottom-[-20px] right-8 md:right-12">
+          <span className="absolute bottom-[-20px] right-8 md:right-12 spans">
             {errors.Password.message}
           </span>
         )}
