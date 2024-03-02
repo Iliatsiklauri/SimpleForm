@@ -5,3 +5,13 @@
 .parent {
   background-image: url('/Group.png');
 }
+span {
+  color: #ff7979;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  text-align: right;
+}
