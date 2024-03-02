@@ -50,7 +50,9 @@ const Form = () => {
         <input
           type="text"
           className={`border-[1px] border-[#DEDEDE] placeholder:text-[#3D3B48] placeholder:opacity-60 caret-[#5E54A4] focus:placeholder:opacity-100 p-4 w-[85%] rounded-md ${
-            errors.name ? 'outline-[#FF7979]' : 'outline-[#5E54A4]'
+            errors.name
+              ? 'outline-[#FF7979] border-[#FF7979] border-2 '
+              : 'border-[#DEDEDE] outline-[#5E54A4]'
           } mt-6 md:mt-10"`}
           placeholder="First Name"
           maxLength={20}
@@ -73,7 +75,9 @@ const Form = () => {
         <input
           type="text"
           className={`border-[1px] border-[#DEDEDE] placeholder:text-[#3D3B48] placeholder:opacity-60 caret-[#5E54A4]  focus:placeholder:opacity-100 p-4 w-[85%] rounded-md ${
-            errors.LastName ? 'outline-[#FF7979]' : 'outline-[#5E54A4]'
+            errors.LastName
+              ? 'outline-[#FF7979] border-[#FF7979] border-2'
+              : 'border-[#DEDEDE] outline-[#5E54A4]'
           }`}
           placeholder="Last Name"
           maxLength={20}
@@ -95,10 +99,16 @@ const Form = () => {
       <div className="flex items-center justify-center w-full relative">
         <input
           type="email"
-          className={`border-[1px] border-[#DEDEDE] placeholder:text-[#3D3B48] placeholder:opacity-60 caret-[#5E54A4] focus:placeholder:opacity-100 p-4 w-[85%] rounded-md ${
-            errors.Email ? 'outline-[#FF7979]' : 'outline-[#5E54A4]'
+          className={`border-[1px] border-[#DEDEDE] ${
+            errors.Email
+              ? 'placeholder:text-[#FF7979] placeholder:opacity-100'
+              : 'placeholder:text-[#3D3B48]'
+          } placeholder:opacity-60 caret-[#5E54A4] focus:placeholder:opacity-100 p-4 w-[85%] rounded-md ${
+            errors.Email
+              ? 'outline-[#FF7979] border-[#FF7979] border-2'
+              : 'border-[#DEDEDE] outline-[#5E54A4]'
           }`}
-          placeholder="Email address"
+          placeholder={errors.Email ? 'email@example.com' : 'Email address'}
           maxLength={30}
           {...register('Email')}
         />
@@ -118,8 +128,10 @@ const Form = () => {
       <div className="flex items-center justify-center w-full relative">
         <input
           type="password"
-          className={`border-[1px] border-[#DEDEDE] placeholder:text-[#3D3B48] placeholder:opacity-60 caret-[#5E54A4]  focus:placeholder:opacity-100 p-4 w-[85%] rounded-md ${
-            errors.Password ? 'outline-[#FF7979]' : 'outline-[#5E54A4]'
+          className={`border-[1px] placeholder:text-[#3D3B48] placeholder:opacity-60 caret-[#5E54A4]  focus:placeholder:opacity-100 p-4 w-[85%] rounded-md ${
+            errors.Password
+              ? 'outline-[#FF7979] border-[#FF7979] border-2'
+              : 'border-[#DEDEDE] outline-[#5E54A4]'
           }`}
           placeholder="Password"
           maxLength={30}
