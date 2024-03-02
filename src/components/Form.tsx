@@ -54,7 +54,7 @@ const Form = () => {
               ? 'outline-[#FF7979] border-[#FF7979] border-2 '
               : 'border-[#DEDEDE] outline-[#5E54A4]'
           } mt-6 md:mt-10"`}
-          placeholder="First Name"
+          placeholder={errors.name ? '' : 'First Name'}
           maxLength={20}
           {...register('name')}
         />
@@ -79,7 +79,7 @@ const Form = () => {
               ? 'outline-[#FF7979] border-[#FF7979] border-2'
               : 'border-[#DEDEDE] outline-[#5E54A4]'
           }`}
-          placeholder="Last Name"
+          placeholder={errors.LastName ? '' : 'Last Name'}
           maxLength={20}
           {...register('LastName')}
         />
@@ -133,7 +133,7 @@ const Form = () => {
               ? 'outline-[#FF7979] border-[#FF7979] border-2'
               : 'border-[#DEDEDE] outline-[#5E54A4]'
           }`}
-          placeholder="Password"
+          placeholder={errors.Password ? '' : 'Password'}
           maxLength={30}
           {...register('Password')}
         />
