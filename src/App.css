@@ -2,6 +2,12 @@
   box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
   cursor: pointer;
 }
+form {
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+}
+.btnn {
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+}
 .parent {
   background-image: url('/Group.png');
 }
